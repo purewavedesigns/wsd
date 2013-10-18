@@ -22,7 +22,7 @@ img {
 .wrapper {
 	max-width:840px;
 	margin:0 auto;
-	background:#FFF;
+	background:rgba(255, 255, 255, 0.9); /* Fixed per professor's request */
 }
 
 .clear {
@@ -168,7 +168,7 @@ article h2 {
 }
 
 article header {
-	background:#FFF;
+	background:none;
 }
 
 .columns {
@@ -243,4 +243,114 @@ footer p {
     float:right;
     right:20px;
     top:-7px;
+}
+
+/* for 768 to 959px (tablet) displays */
+@media screen and (min-width: 768px) and (max-width: 959px) {
+    body {
+        background:none;
+    }
+    
+    section {
+        background:#eee;
+    }
+    
+    section h2 {
+        font-size:2.1em;
+        color:#333;
+        text-shadow:none;
+        margin:0;
+        font-weight:600;
+    }
+}
+
+/* for 480 to 767px (tablet) displays */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    body {
+        background:none;
+    }
+    
+    section {
+        background:#eee;
+    }
+    
+    section h2 {
+        font-size:1.9em;
+        color:#333;
+        text-shadow:none;
+        margin:0;
+        font-weight:600;
+    }
+    
+    article ul {
+        width: 90%;
+        margin: 0 auto;
+    }
+    article li {
+        min-width:60px;
+    }
+}
+
+/* for mobile displays */
+@media screen and (max-width: 479px) {
+    .columns {
+        padding:1.5%;
+        -moz-column-count:1;
+        -webkit-column-count:1;
+        column-count:1;
+    }
+    
+    .columns p {
+        padding-bottom:10px;
+    }
+    
+    /* Section Button */
+    button {
+        color:#ffffff;
+        font-family:Verdana;
+        font-size:12px;
+        font-weight:bold;
+        font-style:normal;
+        height:40px;
+        line-height:14px;
+        width:180px;
+    }
+    
+    button:hover {
+        background-color:#d91c5b;
+    }
+    
+    button:active {
+        position:relative;
+        top:1px;
+    }
+    
+    section img {
+        display:none;
+    }
+    
+    body {
+        background:none;
+    }
+    
+    section {
+        background:#eee;
+    }
+    
+    section h2 {
+        font-size:1.8em;
+        color:#333;
+        text-shadow:none;
+        margin:0;
+        font-weight:600;
+    }
+    
+    article ul {
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+    article li {
+        min-width:100px;
+    }
 }
