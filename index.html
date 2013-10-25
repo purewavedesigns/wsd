@@ -113,15 +113,15 @@
                 <form method="get" action="mailto:me@example.com">
                     <div class="input1">
                         <label for="name">Name:</label>
-                        <input type="text" name="name" id="name" />
+                        <input class="input" type="text" name="name" id="name" />
                     </div>
                     <div class="input1">
                         <label for="email">Email:</label>
-                        <input type="text" name="email" id="email" />
+                        <input class="input" type="text" name="email" id="email" />
                     </div>
                     <div class="input1">
                         <label style="padding-right: 1em;" for="plan">Plan:</label>
-                        <select name="plan">
+                        <select name="plan" id="plan">
                             <option value="famous">Famous</option>
                             <option value="star">Star</option>
                         </select>
@@ -136,7 +136,7 @@
                         <p>I have read and agree to the <a href="#">user agreement</a></p>
                     </div>
                     <div>
-                        <button type="sumbit" name="submit">Sign Up!</button> 
+                        <input class="button" type="submit" value="Sign Up!">
                     </div>
                 </form>
             </div>
