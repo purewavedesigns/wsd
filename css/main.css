@@ -132,12 +132,12 @@ button {
 	display:inline-block;
 	color:#ffffff;
 	font-family:Verdana;
-	font-size:15px;
+	font-size:1em;
 	font-weight:bold;
 	font-style:normal;
-	height:56px;
-	line-height:56px;
-	width:300px;
+	height:3em;
+	line-height:150%;
+	width:50%;
 	text-decoration:none;
 	text-align:center;
 	text-shadow:1px 1px 0px #660a2a;
@@ -152,7 +152,7 @@ button:hover {
 
 button:active {
 	position:relative;
-	top:1px;
+	top:2%;
 }
 
 /* Article */
@@ -226,10 +226,166 @@ aside p {
 	margin:0 20px 10px 20px;
 }
 
+/* Bottom Section */
+#bottom {
+    background: #444;
+}
+
+#bottom_wrap {
+    width:95%;
+    margin:0 auto;
+    overflow:hidden;
+}
+
+#membership {
+    width:47%;
+    float:left;
+    color:#FEFEFE;
+}
+
+#membership table {
+    border-collapse: collapse;
+    margin-bottom: 6%;
+    empty-cells:hide;
+    margin-top:3.0em;
+}
+
+#membership th {
+    background:#EFEFEF;
+    color:#333;
+    font-size:1.6em;
+    padding:0.4em;
+    padding-bottom:0.2em;
+    border-top-left-radius:0.6em 0.4em;
+    border-top-right-radius:0.6em 0.4em;
+    border-right:1px solid #444;
+    line-height:0.8em;
+    vertical-align:bottom;
+    
+}
+
+#membership td {
+    background:#565656;
+    font-size:0.7em;
+    text-align:center;
+    padding:0.7em 1.7em;
+    border-top:1px solid #777;
+    border-right:1px solid #444;
+}
+
+#membership #star {
+    background:#d91c5b;
+    color:#eee;
+}
+
+#membership #star2 {
+    background:#d91c5b;
+    color:#eee;
+}
+
+#membership .header2 th {
+    font-size:0.8em;
+    border-top-left-radius:0;
+    border-top-right-radius:0;
+    padding-bottom:0.7em;
+}
+
+#signup {
+    width:47%;
+    float:right;
+    color:#efefef;
+}
+
+#signup p {
+    font-size:0.5em;
+}
+
+#signup label {
+    font-size:0.6em;
+}
+
+#signup h2 {
+    margin-bottom:0.1em;
+}
+
+#signup h4 {
+    margin-top:0.2em;
+    font-size:0.8em;
+}
+
+#signup input {
+    background:#565656;
+    border:0.1em solid #777;
+
+}
+
+#signup .input1 {
+    float:right;
+    clear:right;
+    width:95%;
+}
+
+#signup .input2 {
+    float:right;
+    clear:right;
+    width:95%;
+}
+
+#signup select {
+    background:#565656;
+    border:0.1em solid #777;
+    color:#eee;
+}
+
+#signup textarea {
+    background:#565656;
+    border:0.1em solid #777;
+
+}
+
+#signup textarea:focus {
+    background:#888;
+
+}
+
+#signup checkbox {
+    background:#565656;
+    border:0.1em solid #777;
+
+}
+
+#signup .checkbox {
+    float:left;
+    clear:left;
+}
+
+#signup p {
+    font-size:0.6em;
+    float: left;
+    margin: 0.3em;
+}
+
+#signup input:focus {
+    background:#888;
+}
+
+#signup input, label {
+    display: inline-block;
+    padding-right:0.4em;
+}
+
+#signup a {
+    color:#d91c5b;
+}
+
+#signup button {
+    width:50%;
+    margin:1em;
+}
+
 /* Footer */
 footer {
 	background:#222;
-	margin-top: 20px;
 	padding:5px 10px;
 }
 
@@ -288,6 +444,14 @@ footer p {
     }
     article li {
         min-width:60px;
+    }
+    #signup {
+        float:none;
+        width:90%;
+    }
+    #membership {
+        float:none;
+        width:90%;
     }
 }
 
@@ -352,5 +516,8 @@ footer p {
     
     article li {
         min-width:100px;
+    }
+    #bottom {
+        display:none;
     }
 }
